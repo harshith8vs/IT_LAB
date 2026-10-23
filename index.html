@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>QuickBite | Online Food Delivery</title>
+  <link rel="stylesheet" href="src/style.css">
+  <script src="src/app.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#" aria-label="QuickBite home">QuickBite</a>
+    <nav aria-label="Main navigation">
+      <a href="#how-it-works">How It Works</a>
+      <a href="#menu">Menu</a>
+      <a href="#cart">Your Order (<span id="cart-count">0</span>)</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <h1>Online Food Delivery</h1>
+      <p>Order fresh meals quickly and easily from our kitchen to your doorstep.</p>
+      <a class="button" href="#menu">View Menu</a>
+    </section>
+
+    <section id="how-it-works" class="section">
+      <h2>How It Works</h2>
+      <p>A simple three-step process for fast and reliable food delivery:</p>
+      <ol>
+        <li>Browse our menu and search for your favorite dishes.</li>
+        <li>Add items to your order and review the total price.</li>
+        <li>Confirm your order for prompt local delivery.</li>
+      </ol>
+
+      <h3>Delivery Information</h3>
+      <table>
+        <thead>
+          <tr>
+            <th>Delivery Zone</th>
+            <th>Estimated Time</th>
+            <th>Delivery Fee</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Campus &amp; Hostels</td>
+            <td>15–20 mins</td>
+            <td>Free</td>
+          </tr>
+          <tr>
+            <td>City Center</td>
+            <td>25–30 mins</td>
+            <td>₹20</td>
+          </tr>
+          <tr>
+            <td>Outer Suburbs</td>
+            <td>35–45 mins</td>
+            <td>₹40</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section id="menu" class="section">
+      <div class="section-heading">
+        <h2>Menu</h2>
+        <label for="menu-search">Search dishes:
+          <input id="menu-search" type="search" placeholder="Search dishes..." aria-label="Search dishes">
+        </label>
+      </div>
+      <div id="menu-items" class="menu-grid" aria-live="polite"></div>
+    </section>
+
+    <section id="cart" class="section">
+      <h2>Your Order</h2>
+      <p id="cart-message">Your order is empty. Add a dish to get started.</p>
+      <p class="total">Total: <strong id="cart-total">₹0</strong></p>
+      <button id="clear-cart" class="button" type="button">Clear order</button>
+      <p class="notice">Demo only — no real payment or order is processed.</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; QuickBite Online Food Delivery. DevOps Educational Demo.</p>
+  </footer>
+</body>
+</html>
+
